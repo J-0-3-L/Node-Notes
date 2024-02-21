@@ -38,6 +38,7 @@ app.use((req,res,next)=>{
 // Routes
 app.use(require('./routes/index.routes'))
 app.use(require('./routes/nodes.routes'))
+app.use(require('./routes/users.routes'))
 
 // Static files
 app.use(express.static(path.join(__dirname,'public')))
